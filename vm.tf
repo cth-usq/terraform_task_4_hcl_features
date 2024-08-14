@@ -33,7 +33,7 @@ resource "azurerm_virtual_machine" "main" {
   tags = {
     environment = "staging"
   }
-  # lifecycle {
-  #   prevent_destroy = true
-  # }
+  lifecycle {
+    prevent_destroy = true
+  }
 }
